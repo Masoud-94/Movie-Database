@@ -1,0 +1,114 @@
+//custom bootstrap scss
+$theme-colors: (
+  "deadwhite": #fff,
+  "white": #e5e5e5,
+  "orange": #ff9502,
+  "blue": #001d4c,
+  "green": #07f2d2,
+  "red": #ff002a,
+  "gray": #dee8ce,
+);
+//bootstap scss
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//cusom scss
+.form-control {
+  color: #e5e5e5;
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+  border-radius: 0;
+  text-transform: uppercase;
+  &:focus {
+    box-shadow: none;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #e5e5e5;
+  }
+}
+.btn {
+  border-radius: 0;
+}
+.home-search {
+  margin: 70px 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.home-page {
+  &__header {
+    text-align: center;
+    margin-bottom: 4rem;
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: #a59e9e;
+      }
+    }
+
+    &--title {
+      font-size: 3.6rem;
+      direction: rtl;
+      &--2 {
+        line-height: 5rem;
+      }
+    }
+  }
+  .sign-in {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    .title {
+      margin: 10px 0;
+    }
+  }
+}
+.home-page__header {
+  background-image: url("./assets/img/felix-mooneeram.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-bottom: 0;
+}
+.card-wrapper {
+  text-align: center;
+  max-height: 500px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+
+  &:hover {
+    transform: scale(1.025);
+  }
+}
+.card {
+  &__link {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__title {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    color: black;
+    font-size: 1rem;
+  }
+  &__poster {
+    width: 100%;
+    max-height: 400px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
